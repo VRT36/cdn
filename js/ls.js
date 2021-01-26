@@ -1,91 +1,34 @@
 /* 
 Project     : Local Storage VRT
-Done By     : VRT
+By          : VRT
 Date        : 31/03/2019
 Time        : 11:09
 */
 function set(){
-  localStorage.setItem("color", "violet");
-  document.getElementById("btn1").classList.add("btn-swap-black-1");
-  document.getElementById("btn2").classList.add("btn-swap-black-1");
-  document.getElementById("btn3").classList.add("btn-swap-black-1");
-  document.getElementById("btn4").classList.add("btn-swap-black-1");
-  document.getElementById("btn5").classList.add("btn-swap-black-1");
-  document.getElementById("btn6").classList.add("btn-swap-black-1");
-  document.getElementById("btn7").classList.add("btn-swap-black-1");
+  sessionStorage.setItem("preset", "1");
+  document.getElementById("root").classList.add("preset-1");
 }
-
 // TS#1554010709
-
 function get(){
-  alert("This code will not work on SL mobile app.Use PC instead.Rerun the code to see the effect. :)")
-  var cco = localStorage.getItem("color");
-  if (cco == "violet"){
-      var co = "indigo";
-      localStorage.setItem("color", co);
-    document.getElementById("btn1").classList.add("btn-swap-black-2");
-    document.getElementById("btn2").classList.add("btn-swap-black-2");
-    document.getElementById("btn3").classList.add("btn-swap-black-2");
-    document.getElementById("btn4").classList.add("btn-swap-black-2");
-    document.getElementById("btn5").classList.add("btn-swap-black-2");
-    document.getElementById("btn6").classList.add("btn-swap-black-2");
-    document.getElementById("btn7").classList.add("btn-swap-black-2");
-    
-  }else if(cco == "indigo"){
-    var co = "blue";
-      localStorage.setItem("color", co);
-    document.getElementById("btn1").classList.add("btn-swap-black-3");
-    document.getElementById("btn2").classList.add("btn-swap-black-3");
-    document.getElementById("btn3").classList.add("btn-swap-black-3");
-    document.getElementById("btn4").classList.add("btn-swap-black-3");
-    document.getElementById("btn5").classList.add("btn-swap-black-3");
-    document.getElementById("btn6").classList.add("btn-swap-black-3");
-    document.getElementById("btn7").classList.add("btn-swap-black-3");
-
-  }else if(cco == "blue"){
-    var co = "green";
-      localStorage.setItem("color", co);
-    document.getElementById("btn1").classList.add("btn-swap-black-4");
-    document.getElementById("btn2").classList.add("btn-swap-black-4");
-    document.getElementById("btn3").classList.add("btn-swap-black-4");
-    document.getElementById("btn4").classList.add("btn-swap-black-4");
-    document.getElementById("btn5").classList.add("btn-swap-black-4");
-    document.getElementById("btn6").classList.add("btn-swap-black-4");
-    document.getElementById("btn7").classList.add("btn-swap-black-4");
-    
-  }else if(cco == "green"){
-    var co = "yellow";
-      localStorage.setItem("color", co);
-    document.getElementById("btn1").classList.add("btn-swap-black-5");
-    document.getElementById("btn2").classList.add("btn-swap-black-5");
-    document.getElementById("btn3").classList.add("btn-swap-black-5");
-    document.getElementById("btn4").classList.add("btn-swap-black-5");
-    document.getElementById("btn5").classList.add("btn-swap-black-5");
-    document.getElementById("btn6").classList.add("btn-swap-black-5");
-    document.getElementById("btn7").classList.add("btn-swap-black-5");
-    
-  }else if(cco == "yellow"){
-    var co = "orange";
-      localStorage.setItem("color", co);
-    document.getElementById("btn1").classList.add("btn-swap-black-6");
-    document.getElementById("btn2").classList.add("btn-swap-black-6");
-    document.getElementById("btn3").classList.add("btn-swap-black-6");
-    document.getElementById("btn4").classList.add("btn-swap-black-6");
-    document.getElementById("btn5").classList.add("btn-swap-black-6");
-    document.getElementById("btn6").classList.add("btn-swap-black-6");
-    document.getElementById("btn7").classList.add("btn-swap-black-6");
-    
-  }else if(cco == "orange"){
-    var co = "red";
-      localStorage.setItem("color", co);
-    document.getElementById("btn1").classList.add("btn-swap-black-7");
-    document.getElementById("btn2").classList.add("btn-swap-black-7");
-    document.getElementById("btn3").classList.add("btn-swap-black-7");
-    document.getElementById("btn4").classList.add("btn-swap-black-7");
-    document.getElementById("btn5").classList.add("btn-swap-black-7");
-    document.getElementById("btn6").classList.add("btn-swap-black-7");
-    document.getElementById("btn7").classList.add("btn-swap-black-7");
-    
+  var vrt = sessionStorage.getItem("preset");
+  if (vrt == "1"){
+    sessionStorage.setItem("preset", "2");
+    document.getElementById("root").classList.add("preset-2");
+  }else if(vrt == "2"){
+    sessionStorage.setItem("preset", "3");
+    document.getElementById("root").classList.add("preset-3");
+  }else if(vrt == "3"){
+    sessionStorage.setItem("preset", "4");
+    document.getElementById("root").classList.add("preset-4");
+  }else if(vrt == "4"){
+    sessionStorage.setItem("preset", "5");
+    document.getElementById("root").classList.add("preset-5");
+  }else if(vrt == "5"){
+    sessionStorage.setItem("preset", "6");
+    document.getElementById("root").classList.add("preset-6"); 
+  }else if(vrt == "6"){
+    sessionStorage.setItem("preset", "7");
+    document.getElementById("root").classList.add("preset-7");
   }else {
       set();
   }
