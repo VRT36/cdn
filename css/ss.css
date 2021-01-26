@@ -6,6 +6,41 @@
   background: linear-gradient(to right, #B06AB3, #4568DC); 
 }
 .preset-2{
+  background: rgba(218,185,252,1);
+  background: -webkit-linear-gradient( 109.6deg,  rgba(218,185,252,1) 11.2%, rgba(125,89,252,1) 91.1% );
+  background: -moz-linear-gradient( 109.6deg,  rgba(218,185,252,1) 11.2%, rgba(125,89,252,1) 91.1% );
+  background: -o-linear-gradient( 109.6deg,  rgba(218,185,252,1) 11.2%, rgba(125,89,252,1) 91.1% );
+  background: linear-gradient( 109.6deg,  rgba(218,185,252,1) 11.2%, rgba(125,89,252,1) 91.1% );
+}
+.preset-3{
+  background: rgba(62,133,238,1);
+  background: -webkit-radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
+  background: -moz-radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
+  background: -o-radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
+}
+.preset-4{
+  background-color: #08AEEA;
+  background-image: -webkit-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  background-image: -moz-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  background-image: -o-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+.preset-5{
+  background-color: #FF9A8B;
+  background-image: -webkit-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  background-image: -moz-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  background-image: -o-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); 
+}
+.preset-6{
+  background-color: #74EBD5;
+  background-image: -webkit-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-image: -moz-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-image: -o-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+.preset-7{
   background: #FBAB7E;
   background: -webkit-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   background: -moz-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
